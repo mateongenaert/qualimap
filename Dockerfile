@@ -26,7 +26,7 @@ RUN apt-get update
 WORKDIR /home
 
 RUN wget --no-check-certificate https://bitbucket.org/kokonech/qualimap/downloads/qualimap_v${QUALIMAP_VERSION}.zip
-RUN unzip v${QUALIMAP_VERSION}.zip
+RUN unzip qualimap_v${QUALIMAP_VERSION}.zip
 
 RUN Rscript -e "install.packages('optparse')"
 RUN Rscript -e "install.packages('XML')"
